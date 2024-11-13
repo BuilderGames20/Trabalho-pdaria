@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFinder</title>
+    <style>
+        
+        :root {
+            --white-ice: #F1F6F9;
+            --coffee: #6F4E37;
+            --text-color: #333;
+            --highlight: #DBA27E; 
+            --light-gray: #E8E8E8;
+        }
+
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            background-color: var(--white-ice);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--light-gray);
+            margin-bottom: 20px;
+        }
+
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+
+        .header h1 {
+            font-size: 1.8em;
+            color: var(--coffee);
+            margin-left: 10px;
+        }
+
+
+        .header .info {
+            font-size: 0.9em;
+            color: var(--coffee);
+            text-align: right;
+        }
+
+
+
+        .category {
+            margin-top: 30px;
+        }
+
+
+        .category h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--coffee);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+
+        .product-card {
+            background-color: #FFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+
+       
+        .product-details {
+            padding: 15px;
+        }
+
+
+        .product-details h3 {
+            font-size: 1.1em;
+            color: var(--coffee);
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+
+        .product-details p {
+            font-size: 0.9em;
+            color: var(--text-color);
+            margin-bottom: 12px;
+            font-weight: 300;
+        }
+
+
+        .product-details .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--highlight);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     
+        <div class="header">
+            <div style="display: flex; align-items: center;">
+                <img src="logo.png" alt="Logo Padaria Monza" >
+                <h1>Padaria FreshFinder</h1>
+            </div>
+            <div class="info">
+                <p>Aceita agendamento</p>
+                <p>Abre amanhã às 07:30</p>
+            </div>
+        </div>
+
+
+       <a href="sobre produto Rabanada 1.html">
+        <div class="category">
+            <h2>Especial Natal</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="rabanada.png" alt="Rabanada 170g">
+                    <div class="product-details">
+                        <h3>Rabanada 170g</h3>
+                        <span class="price">R$ 19,40</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre produto Panetone Tradicional.html">
+                <div class="product-card">
+                    <img src="panetona.png" alt="Panetone Tradicional 400g">
+                    <div class="product-details">
+                        <h3>Panetone Tradicional 400g</h3>
+                        <span class="price">R$ 27,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+      <a href="sobre o produto Torta Nozes.html">
+        <div class="category">
+            <h2>Tortas</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="torta de nozes.avif" alt="Torta Baby Chocolate Com Nozes 1kg">
+                    <div class="product-details">
+                        <h3>Torta Baby Chocolate Com Nozes 1kg</h3>
+                        <span class="price">R$ 151,50</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre produto Torta Baby Chocolate.html">
+                <div class="product-card">
+                    <img src="torta de chocolate.jpg" alt="Torta Baby Chocolate Belga 1kg">
+                    <div class="product-details">
+                        <h3>Torta Baby Chocolate Belga 1kg</h3>
+                        <span class="price">R$ 198,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Torta Ninho.html">
+                <div class="product-card">
+                    <img src="torta de ninho.jpg" alt="Torta Baby Ninho e Nutella 1kg">
+                    <div class="product-details">
+                        <h3>Torta Baby Ninho e Nutella 1kg</h3>
+                        <span class="price">R$ 169,90</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Mini Tortinha Chocolate.html">
+                <div class="product-card">
+                    <img src="mini torta de chocolate.png" alt="Mini Tortinha Chocolate 300g">
+                    <div class="product-details">
+                        <h3>Mini Tortinha Chocolate 300g</h3>
+                        <span class="price">R$ 50,20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+        <a href="sobre o produto Pão Tradicional.html">
+        <div class="category">
+            <h2>Padaria</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="pao tradicional.avif" alt="Pão Francês Tradicional 50g">
+                    <div class="product-details">
+                        <h3>Pão Francês Tradicional 50g</h3>
+                        <span class="price">R$ 0,75</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Pão Integral.html">
+                <div class="product-card">
+                    <img src="Pão Francês 100_ Integral.avif" alt="Pão Francês 100% Integral 50g">
+                    <div class="product-details">
+                        <h3>Pão Francês 100% Integral 50g</h3>
+                        <span class="price">R$ 0,95</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Croissant .html">
+                <div class="product-card">
+                    <img src="Croissant Francês 80g.avif" alt="Croissant Francês 80g">
+                    <div class="product-details">
+                        <h3>Croissant Francês 80g</h3>
+                        <span class="price">R$ 3,80</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Palito Queijo.html">
+                <div class="product-card">
+                    <img src="Palito Queijo Parmesão 160g.avif" alt="Palito Queijo Parmesão 160g">
+                    <div class="product-details">
+                        <h3>Palito Queijo Parmesão 160g</h3>
+                        <span class="price">R$ 25,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Torrada.html">
+                <a href="sobre o produto Torrada.html">
+                <div class="product-card">
+                    <img src="Torrada Temperada 145g.avif" alt="Torrada Temperada 145g">
+                    <div class="product-details">
+                        <h3>Torrada Temperada 145g</h3>
+                        <span class="price">R$ 20,30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+
+      <a href="sobre o produto Sonho Doce de Leite.html">
+        <div class="category">
+            <h2>Doces</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Sonho Doce de Leite 75g.jpg" alt="Sonho Doce de Leite 75g">
+                    <div class="product-details">
+                        <h3>Sonho Doce de Leite 75g</h3>
+                        <span class="price">R$ 6,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Sonho Creme.html">
+                <div class="product-card">
+                    <img src="Sonho creme75g.avif" alt="Sonho Creme 75g">
+                    <div class="product-details">
+                        <h3>Sonho Creme 75g</h3>
+                        <span class="price">R$ 6,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre o produto Donuts Nutella.html">
+                <div class="product-card">
+                    <img src="Donuts Nutella 75g.avif" alt="Donuts Nutella 75g">
+                    <div class="product-details">
+                        <h3>Donuts Nutella 75g</h3>
+                        <span class="price">R$ 16,20</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre produto Bolinho de Chuva 15.html">
+                <div class="product-card">
+                    <img src="bolinho de chuva.png" alt="Bolinho de Chuva 100g">
+                    <div class="product-details">
+                        <h3>Bolinho de Chuva 100g</h3>
+                        <span class="price">R$ 5,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="sobre produto Bolo Cenoura Recheado 16.html">
+                <div class="product-card">
+                    <img src="cenoura in natura e recheio.avif" alt="Bolo Cenoura Recheado 300g">
+                    <div class="product-details">
+                        <h3>Bolo Cenoura Recheado 300g</h3>
+                        <span class="price">R$ 26,10</span>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+</body>
+</html>

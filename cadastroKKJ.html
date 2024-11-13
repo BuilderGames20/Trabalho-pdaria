@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Finder- Login</title>
+    <script>
+   function padaria(){
+
+    var x = document.getElementById("nome-e-sobrenome").value;
+    var y = document.getElementById("email").value;
+    var h = document.getElementById("numero-de-telefone").value;
+    var i = document.getElementById("senha").value;
+    var v = document.getElementById("confirmar-senha").value;
+
+    if(x && y && h && i && v) {
+         window.location.href = "login.html"        
+    }
+    else{
+document.getElementById("ERRO").innerHTML = "Cadastro incompleto"
+
+    }
+
+
+
+   }
+
+
+
+
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5e8d8;
+        }
+
+        .container {
+            width: 400px;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #8B4513;
+            text-align: left;
+            margin: 0.5rem 0;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 0.8rem;
+            border: 1px solid #D2B48C;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background-color: #F5DEB3;
+        }
+
+        input[type="submit"] {
+            padding: 0.8rem;
+            background-color: #8B4513;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #A0522D;
+        }
+
+        .signup {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #8B4513;
+        }
+
+        .signup a {
+            color: #A0522D;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+        .Redbutton{ 
+        color: red;
+     
+
+        }
+        
+        button{
+            padding: 0.8rem;
+            border: 1px solid #D2B48C;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background-color: #F5DEB3;
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Fresh Finder</div>
+        <img src="logo.png" alt="Logo da Coffee Enyong" class="logo">
+        <input type="text" name="password" placeholder="Nome e Sobrenome" id="nome-e-sobrenome">
+        <input type="text" name="password" placeholder="Email" id="email">
+        <input type="text" name="password" placeholder="Numero de Telefone" id="numero-de-telefone">
+        <input type="password" name="password" placeholder="Senha" id="senha">
+        <input type="password" name="password" placeholder="Confirmar Senha" id="confirmar-senha"> 
+        
+        
+
+
+
+
+    <br>
+        <p id="ERRO" class="Redbutton"></p>
+        <br>
+            <button onclick="padaria()">Cadastrar</button> 
+    
+    </div>
+</body>
+</html>
+
+
